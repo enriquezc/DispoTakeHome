@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12F2EA8CB8A108068B94A146 /* libPods-Dispo Take Home.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 111F557BA94D794F90002A01 /* libPods-Dispo Take Home.a */; };
 		9A829F02277D7CF7002C03F2 /* APIListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A829F01277D7CF7002C03F2 /* APIListResponse.swift */; };
 		FF9415B525EECD340029E28F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415B425EECD340029E28F /* AppDelegate.swift */; };
 		FF9415B725EECD340029E28F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415B625EECD340029E28F /* SceneDelegate.swift */; };
@@ -14,17 +15,20 @@
 		FF9415BE25EECD350029E28F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9415BD25EECD350029E28F /* Preview Assets.xcassets */; };
 		FF9415C125EECD350029E28F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9415BF25EECD350029E28F /* LaunchScreen.storyboard */; };
 		FF9415CB25EED1360029E28F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415CA25EED1360029E28F /* MainViewController.swift */; };
-		FF9415CF25EED15B0029E28F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FF9415CE25EED15B0029E28F /* SnapKit */; };
+		FF9415CF25EED15B0029E28F /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FF9415CE25EED15B0029E28F /* SwiftPackageProductDependency */; };
 		FF9415D225EED25A0029E28F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415D125EED2590029E28F /* DetailViewController.swift */; };
 		FF9415D525EED60B0029E28F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415D425EED60B0029E28F /* Constants.swift */; };
-		FF9415DF25EEDC000029E28F /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FF9415DE25EEDC000029E28F /* KingfisherSwiftUI */; };
+		FF9415DF25EEDC000029E28F /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FF9415DE25EEDC000029E28F /* SwiftPackageProductDependency */; };
 		FF9415E225EEDC3A0029E28F /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415E125EEDC3A0029E28F /* SearchResult.swift */; };
 		FF9415E625EEDF380029E28F /* GifApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415E525EEDF380029E28F /* GifApiClient.swift */; };
 		FF9415F625EEF5760029E28F /* GifInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415F525EEF5760029E28F /* GifInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		111F557BA94D794F90002A01 /* libPods-Dispo Take Home.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dispo Take Home.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3334383E75396649B51661B5 /* Pods-Dispo Take Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dispo Take Home.debug.xcconfig"; path = "Target Support Files/Pods-Dispo Take Home/Pods-Dispo Take Home.debug.xcconfig"; sourceTree = "<group>"; };
 		9A829F01277D7CF7002C03F2 /* APIListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIListResponse.swift; sourceTree = "<group>"; };
+		F56C2AB3E0EBB03E81FE1E78 /* Pods-Dispo Take Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dispo Take Home.release.xcconfig"; path = "Target Support Files/Pods-Dispo Take Home/Pods-Dispo Take Home.release.xcconfig"; sourceTree = "<group>"; };
 		FF9415B125EECD340029E28F /* Dispo Take Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dispo Take Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9415B425EECD340029E28F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF9415B625EECD340029E28F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,19 +49,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF9415DF25EEDC000029E28F /* KingfisherSwiftUI in Frameworks */,
-				FF9415CF25EED15B0029E28F /* SnapKit in Frameworks */,
+				FF9415DF25EEDC000029E28F /* BuildFile in Frameworks */,
+				FF9415CF25EED15B0029E28F /* BuildFile in Frameworks */,
+				12F2EA8CB8A108068B94A146 /* libPods-Dispo Take Home.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EFFAC28B652F9DADC7CC40C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3334383E75396649B51661B5 /* Pods-Dispo Take Home.debug.xcconfig */,
+				F56C2AB3E0EBB03E81FE1E78 /* Pods-Dispo Take Home.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4DBAC1202F11382DB9EE63A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				111F557BA94D794F90002A01 /* libPods-Dispo Take Home.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF9415A825EECD340029E28F = {
 			isa = PBXGroup;
 			children = (
 				FF9415B325EECD340029E28F /* Dispo Take Home */,
 				FF9415B225EECD340029E28F /* Products */,
+				2EFFAC28B652F9DADC7CC40C /* Pods */,
+				4DBAC1202F11382DB9EE63A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +153,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF9415C525EECD350029E28F /* Build configuration list for PBXNativeTarget "Dispo Take Home" */;
 			buildPhases = (
+				0943D3D6D4CDE29AC970C6B3 /* [CP] Check Pods Manifest.lock */,
 				FF9415AD25EECD340029E28F /* Sources */,
 				FF9415AE25EECD340029E28F /* Frameworks */,
 				FF9415AF25EECD340029E28F /* Resources */,
@@ -138,8 +164,8 @@
 			);
 			name = "Dispo Take Home";
 			packageProductDependencies = (
-				FF9415CE25EED15B0029E28F /* SnapKit */,
-				FF9415DE25EEDC000029E28F /* KingfisherSwiftUI */,
+				FF9415CE25EED15B0029E28F /* SwiftPackageProductDependency */,
+				FF9415DE25EEDC000029E28F /* SwiftPackageProductDependency */,
 			);
 			productName = "Dispo Take Home";
 			productReference = FF9415B125EECD340029E28F /* Dispo Take Home.app */;
@@ -169,8 +195,8 @@
 			);
 			mainGroup = FF9415A825EECD340029E28F;
 			packageReferences = (
-				FF9415CD25EED15B0029E28F /* XCRemoteSwiftPackageReference "snapkit" */,
-				FF9415DD25EEDC000029E28F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FF9415CD25EED15B0029E28F /* RemoteSwiftPackageReference */,
+				FF9415DD25EEDC000029E28F /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = FF9415B225EECD340029E28F /* Products */;
 			projectDirPath = "";
@@ -193,6 +219,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0943D3D6D4CDE29AC970C6B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dispo Take Home-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF9415AD25EECD340029E28F /* Sources */ = {
@@ -343,6 +394,7 @@
 		};
 		FF9415C625EECD350029E28F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3334383E75396649B51661B5 /* Pods-Dispo Take Home.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -364,6 +416,7 @@
 		};
 		FF9415C725EECD350029E28F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F56C2AB3E0EBB03E81FE1E78 /* Pods-Dispo Take Home.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -407,7 +460,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FF9415CD25EED15B0029E28F /* XCRemoteSwiftPackageReference "snapkit" */ = {
+		FF9415CD25EED15B0029E28F /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/snapkit/snapkit.git";
 			requirement = {
@@ -415,7 +468,7 @@
 				version = 5.0.0;
 			};
 		};
-		FF9415DD25EEDC000029E28F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		FF9415DD25EEDC000029E28F /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -426,14 +479,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FF9415CE25EED15B0029E28F /* SnapKit */ = {
+		FF9415CE25EED15B0029E28F /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FF9415CD25EED15B0029E28F /* XCRemoteSwiftPackageReference "snapkit" */;
+			package = FF9415CD25EED15B0029E28F /* RemoteSwiftPackageReference */;
 			productName = SnapKit;
 		};
-		FF9415DE25EEDC000029E28F /* KingfisherSwiftUI */ = {
+		FF9415DE25EEDC000029E28F /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FF9415DD25EEDC000029E28F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = FF9415DD25EEDC000029E28F /* RemoteSwiftPackageReference */;
 			productName = KingfisherSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
