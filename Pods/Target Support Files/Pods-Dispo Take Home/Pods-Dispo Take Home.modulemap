@@ -1,0 +1,6 @@
+module Pods_Dispo_Take_Home {
+  umbrella header "Pods-Dispo Take Home-umbrella.h"
+
+  export *
+  module * { export * }
+}
