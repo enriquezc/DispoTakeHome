@@ -27,7 +27,11 @@ class MainViewController: UIViewController {
 
   private var layout: UICollectionViewLayout {
     // TODO: implement
-    fatalError()
+    let screenWidth = UIScreen.main.bounds.width
+    let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+    layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
+    layout.itemSize = CGSize(width: screenWidth / 3, height: screenWidth / 3)
+    return layout
   }
 
   private lazy var collectionView: UICollectionView = {
