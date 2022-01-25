@@ -7,9 +7,10 @@ class GIFNetworkLayer {
   
   private init() {
     // this singleton doesn't require anything in its initialization
+    print("Initializing GIFNetworkLayer")
   }
     
-  func getGifById(id: String, completion: @escaping (_ gif: GifInfo) -> Void ) {
+  func getGifById(id: String, completion: @escaping (_ gif: GifInfo) -> Void) {
     let path = Constants.gifBaseURL + id
     let params = ["api_key": Constants.giphyApiKey] as [String: Any]
     

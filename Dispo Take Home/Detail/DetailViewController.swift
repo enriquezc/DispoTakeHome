@@ -2,11 +2,11 @@ import UIKit
 import Kingfisher
 
 class DetailViewController: UIViewController {
-  var gifImageView = UIImageView()
-  var gifTitleLabel = UILabel()
-  var idLabel = UILabel()
-  var sourceLabel = UILabel()
-  var ratingLabel = UILabel()
+  private var gifImageView = UIImageView()
+  private var gifTitleLabel = UILabel()
+  private var idLabel = UILabel()
+  private var sourceLabel = UILabel()
+  private var ratingLabel = UILabel()
   
   var viewModel: DetailViewModel?
   
@@ -78,7 +78,7 @@ class DetailViewController: UIViewController {
   }
 
   required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
+    super.init(coder: coder)
   }
 }
 
