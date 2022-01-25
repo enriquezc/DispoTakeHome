@@ -23,7 +23,7 @@
 		FF9415D525EED60B0029E28F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415D425EED60B0029E28F /* Constants.swift */; };
 		FF9415DF25EEDC000029E28F /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FF9415DE25EEDC000029E28F /* KingfisherSwiftUI */; };
 		FF9415E225EEDC3A0029E28F /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415E125EEDC3A0029E28F /* SearchResult.swift */; };
-		FF9415E625EEDF380029E28F /* GifApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415E525EEDF380029E28F /* GifApiClient.swift */; };
+		FF9415E625EEDF380029E28F /* GifNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415E525EEDF380029E28F /* GifNetworkLayer.swift */; };
 		FF9415F625EEF5760029E28F /* GifInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415F525EEF5760029E28F /* GifInfo.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +46,7 @@
 		FF9415D125EED2590029E28F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FF9415D425EED60B0029E28F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FF9415E125EEDC3A0029E28F /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
-		FF9415E525EEDF380029E28F /* GifApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifApiClient.swift; sourceTree = "<group>"; };
+		FF9415E525EEDF380029E28F /* GifNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifNetworkLayer.swift; sourceTree = "<group>"; };
 		FF9415F525EEF5760029E28F /* GifInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,7 @@
 				FF9415D425EED60B0029E28F /* Constants.swift */,
 				FF9415F525EEF5760029E28F /* GifInfo.swift */,
 				FF9415E125EEDC3A0029E28F /* SearchResult.swift */,
-				FF9415E525EEDF380029E28F /* GifApiClient.swift */,
+				FF9415E525EEDF380029E28F /* GifNetworkLayer.swift */,
 				9A829F01277D7CF7002C03F2 /* APIListResponse.swift */,
 			);
 			path = Util;
@@ -268,7 +268,7 @@
 			files = (
 				FF9415F625EEF5760029E28F /* GifInfo.swift in Sources */,
 				81891C2A279F7BA000B87981 /* GifCollectionViewCell.swift in Sources */,
-				FF9415E625EEDF380029E28F /* GifApiClient.swift in Sources */,
+				FF9415E625EEDF380029E28F /* GifNetworkLayer.swift in Sources */,
 				FF9415D525EED60B0029E28F /* Constants.swift in Sources */,
 				FF9415E225EEDC3A0029E28F /* SearchResult.swift in Sources */,
 				FF9415CB25EED1360029E28F /* MainViewController.swift in Sources */,
