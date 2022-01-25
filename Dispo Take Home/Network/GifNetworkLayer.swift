@@ -24,7 +24,6 @@ class GIFNetworkLayer {
             completion(gifByIdInfo)
           } catch (let error) {
             print("we failed to decode the results ", error.localizedDescription)
-            print(error)
           }
         case .failure(let error):
           print("we got this error: ", error.localizedDescription)

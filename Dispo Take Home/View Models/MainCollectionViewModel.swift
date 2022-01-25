@@ -99,6 +99,8 @@ extension MainCollectionViewModel: UICollectionViewDelegate, UICollectionViewDat
   }
   
   func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    // this is the code that introduces pagination when the user
+    // scrolls down to see the last ten items
     var numberOfItems = 0
     if currentSearchTerm != "" {
       numberOfItems = searchedGifs.count

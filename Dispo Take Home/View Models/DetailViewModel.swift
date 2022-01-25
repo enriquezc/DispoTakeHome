@@ -9,7 +9,7 @@ import Foundation
 
 class DetailViewModel: NSObject {
   
-  var id: String
+  private var id: String
   var delegate: DetailViewModelDelegate?
   
   init(id: String) {
