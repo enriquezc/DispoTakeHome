@@ -10,6 +10,7 @@
 		12F2EA8CB8A108068B94A146 /* libPods-Dispo Take Home.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 111F557BA94D794F90002A01 /* libPods-Dispo Take Home.a */; };
 		81891C2A279F7BA000B87981 /* GifCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81891C29279F7BA000B87981 /* GifCollectionViewCell.swift */; };
 		81891C2D279F935E00B87981 /* MainCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81891C2C279F935E00B87981 /* MainCollectionViewModel.swift */; };
+		81891C2F279FE63200B87981 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81891C2E279FE63200B87981 /* DetailViewModel.swift */; };
 		9A829F02277D7CF7002C03F2 /* APIListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A829F01277D7CF7002C03F2 /* APIListResponse.swift */; };
 		FF9415B525EECD340029E28F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415B425EECD340029E28F /* AppDelegate.swift */; };
 		FF9415B725EECD340029E28F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9415B625EECD340029E28F /* SceneDelegate.swift */; };
@@ -31,6 +32,7 @@
 		3334383E75396649B51661B5 /* Pods-Dispo Take Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dispo Take Home.debug.xcconfig"; path = "Target Support Files/Pods-Dispo Take Home/Pods-Dispo Take Home.debug.xcconfig"; sourceTree = "<group>"; };
 		81891C29279F7BA000B87981 /* GifCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCollectionViewCell.swift; sourceTree = "<group>"; };
 		81891C2C279F935E00B87981 /* MainCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewModel.swift; sourceTree = "<group>"; };
+		81891C2E279FE63200B87981 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		9A829F01277D7CF7002C03F2 /* APIListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIListResponse.swift; sourceTree = "<group>"; };
 		F56C2AB3E0EBB03E81FE1E78 /* Pods-Dispo Take Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dispo Take Home.release.xcconfig"; path = "Target Support Files/Pods-Dispo Take Home/Pods-Dispo Take Home.release.xcconfig"; sourceTree = "<group>"; };
 		FF9415B125EECD340029E28F /* Dispo Take Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dispo Take Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				81891C2C279F935E00B87981 /* MainCollectionViewModel.swift */,
+				81891C2E279FE63200B87981 /* DetailViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				FF9415E225EEDC3A0029E28F /* SearchResult.swift in Sources */,
 				FF9415CB25EED1360029E28F /* MainViewController.swift in Sources */,
 				FF9415B525EECD340029E28F /* AppDelegate.swift in Sources */,
+				81891C2F279FE63200B87981 /* DetailViewModel.swift in Sources */,
 				81891C2D279F935E00B87981 /* MainCollectionViewModel.swift in Sources */,
 				FF9415B725EECD340029E28F /* SceneDelegate.swift in Sources */,
 				FF9415D225EED25A0029E28F /* DetailViewController.swift in Sources */,

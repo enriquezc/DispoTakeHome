@@ -10,17 +10,26 @@ class GIFNetworkLayer {
   static let shared = GIFNetworkLayer()
   
   private init() {
-      // not sure if we need anything in the initializer - maybe a singleton isn't the best
+    // this singleton doesn't currently require anything in its initialization
   }
     
   func getGifById(id: String, completion: @escaping (_ gif: GifInfo) -> Void ) {
     let path = Constants.gifBaseURL + id
     let params = ["api_key": Constants.giphyApiKey] as [String: Any]
     
-    AF.request(path, method: .get, parameters: params, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
+    AF.request(path, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON { response in
       switch response.result {
         case .success:
           print("wow succesful getGifById!")
+          do {
+            let decoder = JSONDecoder()
+            let gifByIdGifObject = try decoder.decode( APISingleResponse.self, from: response.data!)
+            let gifByIdInfo = GifInfo.init(gifObject: gifByIdGifObject.data)
+            completion(gifByIdInfo)
+          } catch (let error) {
+            print("we failed to decode the results ", error.localizedDescription)
+            print(error)
+          }
         case .failure(let error):
           print("we got this error: ", error.localizedDescription)
       }

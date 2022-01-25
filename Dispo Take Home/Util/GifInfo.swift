@@ -7,4 +7,12 @@ struct GifInfo {
   var backgroundColor: UIColor?
   var source_tld: String
   var rating: String
+  
+  init(gifObject: GifObject) {
+    id = gifObject.id
+    text = gifObject.title
+    gifUrl = gifObject.images.fixed_height.url
+    source_tld = gifObject.source_tld
+    rating = gifObject.rating
+  }
 }

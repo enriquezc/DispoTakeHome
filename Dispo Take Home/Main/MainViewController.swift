@@ -8,7 +8,6 @@ class MainViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     navigationItem.titleView = searchBar
-
   }
 
   override func loadView() {
@@ -28,7 +27,6 @@ class MainViewController: UIViewController {
     collectionView.dataSource = viewModel
     
     viewModel?.getTrendingGifs()
-    
   }
 
   private lazy var searchBar: UISearchBar = {
@@ -72,10 +70,11 @@ extension MainViewController: UISearchBarDelegate {
 extension MainViewController: MainCollectionViewModelDelegate {
   func reloadData() {
     self.collectionView.reloadData()
-    print("we tried to reload some data after getting the data")
   }
   
   func loadDetailViewWithId(id: String) {
     // here we load the detail view
+    let detailVC = DetailViewController(id: id)
+    self.present(detailVC, animated: true, completion: nil)
   }
 }
