@@ -6,7 +6,7 @@ class GIFNetworkLayer {
   static let shared = GIFNetworkLayer()
   
   private init() {
-    // this singleton doesn't currently require anything in its initialization
+    // this singleton doesn't require anything in its initialization
   }
     
   func getGifById(id: String, completion: @escaping (_ gif: GifInfo) -> Void ) {

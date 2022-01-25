@@ -90,6 +90,14 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
+		81891C3027A05B1000B87981 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FF9415E525EEDF380029E28F /* GifNetworkLayer.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		FF9415A825EECD340029E28F = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +119,7 @@
 		FF9415B325EECD340029E28F /* Dispo Take Home */ = {
 			isa = PBXGroup;
 			children = (
+				81891C3027A05B1000B87981 /* Network */,
 				FF9415B425EECD340029E28F /* AppDelegate.swift */,
 				FF9415B625EECD340029E28F /* SceneDelegate.swift */,
 				FF9415E825EEEA4C0029E28F /* Main */,
@@ -156,7 +165,6 @@
 				FF9415D425EED60B0029E28F /* Constants.swift */,
 				FF9415F525EEF5760029E28F /* GifInfo.swift */,
 				FF9415E125EEDC3A0029E28F /* SearchResult.swift */,
-				FF9415E525EEDF380029E28F /* GifNetworkLayer.swift */,
 				9A829F01277D7CF7002C03F2 /* APIListResponse.swift */,
 			);
 			path = Util;

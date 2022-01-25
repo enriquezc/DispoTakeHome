@@ -4,6 +4,7 @@ import Kingfisher
 class DetailViewController: UIViewController {
   var gifImageView = UIImageView()
   var gifTitleLabel = UILabel()
+  var idLabel = UILabel()
   var sourceLabel = UILabel()
   var ratingLabel = UILabel()
   
@@ -22,6 +23,7 @@ class DetailViewController: UIViewController {
     view.addSubview(title)
     view.addSubview(gifImageView)
     view.addSubview(gifTitleLabel)
+    view.addSubview(idLabel)
     view.addSubview(sourceLabel)
     view.addSubview(ratingLabel)
     view.backgroundColor = .systemBackground
@@ -53,10 +55,17 @@ class DetailViewController: UIViewController {
       make.leading.trailing.equalToSuperview().inset(16)
     }
     
-    sourceLabel.snp.makeConstraints {
+    idLabel.snp.makeConstraints {
       make in
       make.width.equalToSuperview().inset(16)
       make.top.equalTo(gifTitleLabel.snp.bottom).offset(16)
+      make.leading.trailing.equalToSuperview().inset(16)
+    }
+    
+    sourceLabel.snp.makeConstraints {
+      make in
+      make.width.equalToSuperview().inset(16)
+      make.top.equalTo(idLabel.snp.bottom).offset(16)
       make.leading.trailing.equalToSuperview().inset(16)
     }
     
@@ -79,5 +88,6 @@ extension DetailViewController: DetailViewModelDelegate {
     gifTitleLabel.text = gifInfo.text
     sourceLabel.text = "Source: " + gifInfo.source_tld
     ratingLabel.text = "Rating: " + gifInfo.rating
+    idLabel.text = "Id: " + gifInfo.id
   }
 }
