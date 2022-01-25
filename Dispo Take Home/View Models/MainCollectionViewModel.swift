@@ -13,24 +13,36 @@ class MainCollectionViewModel: NSObject {
   private var trendingGifs = [GifObject]()
   private var searchedGifs = [SearchResult]()
   private var currentSearchTerm = ""
+  private var loadingGifs = false
   
   var delegate: MainCollectionViewModelDelegate?
   
   
   func getTrendingGifs() {
-    GIFNetworkLayer.shared.getTrendingGifs(limit: 50, offset: trendingGifs.count) { [weak self]
-      gifObjects in
-      print("we successfully unwrapped the trendingGifs with the following count ", gifObjects.count)
-      self?.trendingGifs = gifObjects
-      self?.delegate?.reloadData()
+    if !loadingGifs {
+      loadingGifs = true
+      GIFNetworkLayer.shared.getTrendingGifs(limit: 50, offset: trendingGifs.count) { [weak self]
+        gifObjects in
+        self?.trendingGifs.append(contentsOf: gifObjects)
+        self?.delegate?.reloadData()
+        self?.loadingGifs = false
+      }
     }
   }
   
   func searchForGif(offset: Int) {
-    GIFNetworkLayer.shared.searchGifByTerm(term: currentSearchTerm, limit: 50, offset: offset) {
-      [weak self] searchResults in
-      self?.searchedGifs = searchResults
-      self?.delegate?.reloadData()
+    if !loadingGifs {
+      loadingGifs = true
+      GIFNetworkLayer.shared.searchGifByTerm(term: currentSearchTerm, limit: 50, offset: offset) {
+        [weak self] searchResults in
+        if offset == 0 {
+          self?.searchedGifs = searchResults
+        } else {
+          self?.searchedGifs.append(contentsOf: searchResults)
+        }
+        self?.delegate?.reloadData()
+        self?.loadingGifs = false
+      }
     }
   }
   
@@ -50,6 +62,7 @@ class MainCollectionViewModel: NSObject {
   
   func cancelSearch() {
     currentSearchTerm = ""
+    self.delegate?.reloadData()
   }
 }
 
@@ -83,6 +96,19 @@ extension MainCollectionViewModel: UICollectionViewDelegate, UICollectionViewDat
       id = trendingGifs[indexPath.row].id
     }
     self.delegate?.loadDetailViewWithId(id: id)
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    var numberOfItems = 0
+    if currentSearchTerm != "" {
+      numberOfItems = searchedGifs.count
+    } else {
+      numberOfItems = trendingGifs.count
+    }
+    
+    if (numberOfItems - indexPath.row <= 10) {
+      self.addMoreGifs()
+    }
   }
   
 }

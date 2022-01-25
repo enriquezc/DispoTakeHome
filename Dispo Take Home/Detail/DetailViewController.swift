@@ -18,16 +18,30 @@ class DetailViewController: UIViewController {
 
   override func loadView() {
     view = UIView()
-    view.backgroundColor = .systemBackground
+    let title = UILabel()
+    view.addSubview(title)
     view.addSubview(gifImageView)
     view.addSubview(gifTitleLabel)
     view.addSubview(sourceLabel)
     view.addSubview(ratingLabel)
+    view.backgroundColor = .systemBackground
+    
+    title.text = "Gif Details"
+    title.textAlignment = .center
+    
+    gifTitleLabel.numberOfLines = 0
+    
+    title.snp.makeConstraints{
+      make in
+      make.width.equalToSuperview().multipliedBy(0.5)
+      make.top.equalToSuperview().inset(16)
+      make.centerX.equalToSuperview()
+    }
     
     gifImageView.snp.makeConstraints {
       make in
       make.width.equalToSuperview().inset(16)
-      make.top.equalToSuperview().inset(16)
+      make.top.equalTo(title.snp.bottom).offset(16)
       make.leading.trailing.equalToSuperview().inset(16)
       make.height.equalToSuperview().multipliedBy(0.4)
     }

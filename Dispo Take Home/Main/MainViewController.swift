@@ -63,6 +63,8 @@ extension MainViewController: UISearchBarDelegate {
     // TODO: implement
     if searchText != "" {
       self.viewModel?.startSearch(term: searchText)
+    } else {
+      self.viewModel?.cancelSearch()
     }
   }
 }

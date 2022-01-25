@@ -1,10 +1,6 @@
 import UIKit
 import Alamofire
 
-struct GifAPIClient {
-  // TODO: Implement
-}
-
 class GIFNetworkLayer {
     
   static let shared = GIFNetworkLayer()
@@ -20,7 +16,6 @@ class GIFNetworkLayer {
     AF.request(path, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON { response in
       switch response.result {
         case .success:
-          print("wow succesful getGifById!")
           do {
             let decoder = JSONDecoder()
             let gifByIdGifObject = try decoder.decode( APISingleResponse.self, from: response.data!)
