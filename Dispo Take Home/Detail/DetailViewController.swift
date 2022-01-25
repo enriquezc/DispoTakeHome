@@ -71,10 +71,6 @@ class DetailViewController: UIViewController {
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
-  
-  @objc func dismissDetails() {
-    self.dismiss(animated: true, completion: nil)
-  }
 }
 
 extension DetailViewController: DetailViewModelDelegate {
